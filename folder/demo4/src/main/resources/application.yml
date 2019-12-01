@@ -1,0 +1,15 @@
+spring:
+  datasource:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: guocaili
+      driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+      view:
+          prefix: /WEB-INF/
+          suffix: .jsp
+mybatis:
+  type-aliases-package: com.fh.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+      map-underscore-to-camel-case: true
